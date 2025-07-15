@@ -1,7 +1,7 @@
 // rafce
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from '../pages/home'
+//import Home from '../pages/home'
 import Shop from '../pages/Shop'
 import Cart from '../pages/Cart'
 import History from '../pages/History'
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Layout />,
         children: [
-            { index: true, element: < Shop /> },
+            { index: true, element: < Home /> },
             { path: 'shop', element: < Shop /> },
             { path: 'cart', element: < Cart /> },
             { path: 'history', element: < History /> },
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: '/admin',
         element: <Layoutadmin />,
         children: [
-            { index: true, element: < Category /> },
+            { index: true, element: < Dashboard /> },
             { path: 'Category', element: < Category /> },
             { path: 'Product', element: < Product /> },
             { path: 'Product/:id', element: < EditProduct /> },
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         //element: <LayoutUser />,
          element: <ProtectRouteUser element={<LayoutUser/>}/>,
         children: [
-            { index: true, element: <  Category/> },
+            { index: true, element: <  HomeUser/> },
             { path: 'Category', element: < Category /> },
             { path: 'Product', element: < Product /> },
 
