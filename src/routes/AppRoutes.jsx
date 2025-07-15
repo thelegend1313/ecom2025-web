@@ -1,7 +1,7 @@
 // rafce
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-//import Home from '../pages/home'
+import Home from '../pages/home'
 import Shop from '../pages/Shop'
 import Cart from '../pages/Cart'
 import History from '../pages/History'
